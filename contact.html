@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <title>BlueStep Youth</title>
+</head>
+
+<body id="main">
+    <nav class="navBar" id="navBar">
+        <div class="maxWidthNav maxWidth">
+            <a href="index.html" class="navLogo">
+                <img id="logo" src="Images/blueStep_youthLogo.svg" alt="BlueStep Youth logo with compass" />
+            </a>
+            <span class="menuBtn" onclick="openNav()">&#9776;</span>
+
+            <ul class="navItems">
+                <li>
+                    <a href="features.html">Features</a>
+                </li>
+                <li>
+                    <a href="pricing.html">Pricing</a>
+                </li>
+                <li>
+                    <a href="company.html">Company</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="active">Contact</a>
+                </li>
+                <li>
+                    <a href="demo.html" class="navDemoBtn">Request Demo</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="pageContent">
+        <div class="one grayTile">
+            <div class="maxWidth">
+                <h1>Contact us</h1>
+                <div class="contactRow">
+                    <div>
+                        <h4>Global Headquarters</h4>
+                        <p><a href="https://goo.gl/maps/mRwbsGh7BZ28ecDg6" target="_blank">121 W 200 S<br>Farmington, UT 84025</a><br><a href="tel:801-336-3043">(801) 336-3043</a></p>
+                    </div>
+                    <div>
+                        <h4>Client Care</h4>
+                        <p><a href="tel:801-336-3043">(801) 336-3043</a><br><a href="http://clientcare.bluestep.net" target="_blank">http://clientcare.bluestep.net</a><br><a href="mailto:clientcare@bluestep.net">clientcare@bluestep.net</a></p>
+                    </div>
+                    <div>
+                        <h4>Sales</h4>
+                        <p><a href="mailto:sales@bluestep.net">sales@bluestep.net</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="two">
+            <div class="maxWidth">
+                <h1>Send us a message</h1>
+                <div>
+                    <form action="">
+                        <!--                        <label for="fname">First Name</label>-->
+                        <input type="text" id="fullName" name="name" placeholder="Name">
+
+                        <!--                        <label for="lname">Last Name</label>-->
+                        <input type="text" id="co" name="company" placeholder="Company">
+                        <input type="text" id="email" name="email" placeholder="Email">
+                        <input type="text" id="phone" name="phone" placeholder="Phone">
+
+                        <!--                        <label for="subject">Subject</label>-->
+                        <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="maxWidth footerRow">
+                <div>
+                    <a href="index.html" class="navLogo">
+                        <img id="logo" src="Images/blueStep_youthLogo.svg" alt="BlueStep Youth logo with compass" />
+                    </a>
+                    <p>Copyright &copy; <span id="year"></span></p>
+                    <p>All rights reserved</p>
+                </div>
+                <div>
+                    <h5>Explore</h5>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="company.html">Company</a>
+                    <a href="demo.html">Request Demo</a>
+                </div>
+                <div>
+                    <h5>Features</h5>
+                    <a href="features.html#scroll1">Full Clinical Suite</a>
+                    <a href="features.html#scroll2">Medication Management</a>
+                    <a href="features.html#scroll3">CRM/Marketing</a>
+                    <a href="features.html#scroll4">Academic Suite</a>
+                    <a href="features.html#scroll5">Billing</a>
+                    <a href="features.html#scroll6">HR/Staffing</a>
+                    <a href="features.html#scroll7">FamilyConnect</a>
+                    <a href="features.html#scroll8">Integration</a>
+                    <a href="features.html#scroll9">Custom Development</a>
+                    <a href="features.html#scroll10">Schools and Programs</a>
+                </div>
+                <div>
+                    <h5>Contact Us</h5>
+                    <p><strong>Global Headquarters</strong><br>121 W 200 S<br>Farmington, UT 84025</p>
+                    <a href="contact.html"><strong>Client Care</strong><br>(801) 336-3043</a>
+                </div>
+            </div>
+            <div class="footerMobile">
+                <div>
+                    <a href="index.html" class="navLogo">
+                        <img id="logo" src="Images/blueStep_youthLogo.svg" alt="BlueStep Youth logo with compass" />
+                    </a>
+                    <p class="copyright">Copyright &copy; <span id="yearMobile"></span><br>All rights reserved</p>
+                </div>
+                <button class="footerCollapsible">Explore</button>
+                <div class="footerContent">
+                    <a href="pricing.html">Pricing</a>
+                    <a href="company.html">Company</a>
+                    <a href="demo.html">Request Demo</a>
+                </div>
+                <button class="footerCollapsible">Features</button>
+                <div class="footerContent">
+                    <a href="features.html#scroll1">Full Clinical Suite</a>
+                    <a href="features.html#scroll2">Medication Management</a>
+                    <a href="features.html#scroll3">CRM/Marketing</a>
+                    <a href="features.html#scroll4">Academic Suite</a>
+                    <a href="features.html#scroll5">Billing</a>
+                    <a href="features.html#scroll6">HR/Staffing</a>
+                    <a href="features.html#scroll7">FamilyConnect</a>
+                    <a href="features.html#scroll8">Integration</a>
+                    <a href="features.html#scroll9">Custom Development</a>
+                    <a href="features.html#scroll10">Schools and Programs</a>
+                </div>
+                <button class="footerCollapsible">Contact</button>
+                <div class="footerContent">
+                    <p><strong>Global Headquarters</strong><br>121 W 200 S<br>Farmington, UT 84025</p>
+                    <a href="contact.html"><strong>Client Care</strong><br>(801) 336-3043</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="company.html">Company</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="demo.html">
+            <div class="navDemoBtn">Request&nbsp;Demo</div>
+        </a>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

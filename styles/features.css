@@ -1,0 +1,447 @@
+:root {
+    --green: #28AE60;
+    /*Primary color*/
+
+    --mint: #10C7B6;
+    --blue: #0F7FBD;
+    --white: #FFFFFF;
+    --white-opacity: #FFFFFF88;
+    --gray: #EFEFEF;
+    --black: #333333;
+
+    /*Gradient colors
+        grad1 is var(--blue)
+        grad10 is var(--mint)
+    */
+    --grad2: #0F89BC;
+    --grad3: #0F93BB;
+    --grad4: #0F9CBA;
+    --grad5: #10A5B9;
+    --grad6: #10AEB8;
+    --grad7: #10B6B8;
+    --grad8: #10BDB7;
+    --grad9: #10C3B6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ---------- HOME PAGE GRID LAYOUT ---------- */
+.featuresContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 12px;
+    margin-top: 75px;
+}
+
+.featuresContent > div {
+    padding: 0;
+    padding-top: 75px;
+}
+
+.featuresContent > div:last-child {
+    padding-bottom: 75px;
+}
+
+.grayTile {
+    background-color: var(--gray);
+}
+
+.center > h1,
+.center > p,
+.center > div,
+.center > div > img {
+    max-width: none;
+    text-align: center;
+}
+
+.center > div > img {
+    height: 284px;
+}
+
+.rowContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imgContent > img {
+    width: 500px;
+    border-radius: 12px;
+}
+
+/*
+.btn {
+    color: var(--white);
+    border-radius: 6px;
+    background-color: var(--blue);
+    padding: 8px 24px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 48px;
+    border: 2px solid var(--blue);
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    color: var(--blue);
+    background-color: var(--white);
+    border: 2px solid var(--blue);
+    transition: 0.3s ease-in-out;
+}
+*/
+
+.btn-sm {
+    font-size: 14px;
+    color: var(--white);
+    border-radius: 6px;
+    background-color: var(--blue);
+    padding: 4px 10px;
+    text-decoration: none;
+    margin: 0 6px 6px 0;
+    border: 2px solid var(--blue);
+    transition: 0.3s ease-in-out;
+}
+
+.btn-sm:hover {
+    color: var(--blue);
+    background-color: transparent;
+    border: 2px solid var(--blue);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+
+
+
+.featLanding {
+    padding-top: 220px !important;
+    padding-bottom: 155px !important;
+    position: inherit;
+    z-index: 0;
+}
+
+.cloudMapImg > img {
+    width: 65%;
+    max-width: 1035px;
+    height: 544px;
+    object-fit: cover;
+    object-position: 190px 0px;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    z-index: 1;
+}
+
+.featNav {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+
+.featCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "featLeft featRight";
+    height: 533px;
+}
+
+.featCard > div {
+    padding: 72px;
+}
+
+.featLeft {
+    grid-area: featLeft;
+    background-color: var(--blue);
+    border-radius: 24px 0 0 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.featLeft > div {
+    align-self: center;
+}
+
+.featRight {
+    grid-area: featRight;
+    background-color: var(--gray);
+    border-radius: 0 24px 24px 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.featRight > img {
+    /*    width: 389px;*/
+    width: 100%;
+    align-self: center;
+}
+
+.featInfoCont {
+    margin-left: -72px;
+}
+
+.featInfoCont > p {
+    max-width: 472px;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.featText {
+    color: var(--white);
+    font-size: 22px;
+}
+
+.featMoreBtn {
+    display: inline-flex;
+    color: var(--white);
+    text-decoration: none;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    opacity: 1.0;
+}
+
+.featMoreBtn > div:last-child {
+    padding-left: 6px;
+}
+
+.featMoreBtn:hover {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.plusIcon {
+    width: 24px;
+    transition: 0.15s ease-in-out;
+}
+
+#fullClinical,
+#medManage,
+#crm,
+#academic,
+#billing,
+#hr,
+#family,
+#integration,
+#custom,
+#school {
+    transition: 0.3s ease-in-out;
+}
+
+#fullClinicalToggle,
+#medManageToggle,
+#crmToggle,
+#academicToggle,
+#billingToggle,
+#hrToggle,
+#familyToggle,
+#integrationToggle,
+#customToggle,
+#schoolToggle {
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 1129px) {
+
+    .featLanding {
+        padding-top: 170px !important;
+        padding-bottom: 115px !important;
+    }
+
+    .imgContent > img {
+        max-width: 400px;
+    }
+
+    h1 {
+        font-size: 36px;
+        color: var(--green);
+        max-width: 475px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 36px;
+        color: var(--white);
+        max-width: 389;
+    }
+
+    .cloudMapImg > img {
+        height: 447px;
+        object-position: 220px 0px;
+    }
+}
+
+@media (max-width: 945px) {
+    .featuresContent {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin-top: 50px;
+    }
+
+    .featCard {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "featLeft"
+            "featRight";
+        height: auto;
+        margin: 0 24px;
+    }
+
+    .featLeft {
+        border-radius: 24px 24px 0 0;
+    }
+
+    .featRight {
+        border-radius: 0 0 24px 24px;
+    }
+
+    .imgContent > img {
+        max-width: 475px;
+    }
+
+    .cloudMapImg > img {
+        width: 70%;
+    }
+
+    .featInfoCont {
+        margin-left: inherit;
+        margin-top: -72px;
+    }
+
+    .featInfoCont > p {
+        margin: auto;
+        margin-bottom: 16px;
+        max-width: none;
+    }
+
+    .featText {
+        max-width: none;
+    }
+
+    .featRight > img {
+        width: 65%;
+    }
+    
+    #topBtn {
+        box-shadow: 0px 3px 6px #00000029;
+    }
+}
+
+@media (max-width: 649px) {
+    .featRight > img {
+        width: 100%;
+    }
+
+/*
+    .cloudMapImg > img {
+        width: 100%;
+        height: 228px;
+        object-fit: cover;
+        object-position: 0px 60px;
+        position: absolute;
+        top: 490px;
+        left: 0px;
+    }
+*/
+    .cloudMapImg > img {
+        display: none;
+    }
+}
+
+@media (max-width: 523px) {
+    .imgContent > img {
+        width: 100%;
+    }
+
+    .center > div > img {
+        height: 234px;
+    }
+
+    h1,
+    p {
+        max-width: none;
+    }
+
+    .featCard > div {
+        padding: 24px;
+    }
+
+    .featText {
+        font-size: 18px;
+    }
+
+    .featInfoCont {
+        margin-top: -24px;
+    }
+
+    .featInfoCont > p {
+        max-width: none;
+    }
+}
+/*
+
+@media (max-width: 418px) {
+    .cloudMapImg > img {
+        height: 253px;
+    }
+}
+
+@media (max-width: 375px) {
+    .cloudMapImg > img {
+        top: 497px;
+    }
+}
+
+@media (max-width: 366px) {
+    .cloudMapImg > img {
+        top: 532px;
+    }
+}
+*/
+
+
+
+
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    transition: 0.15s ease-in-out;
+}
+
+#topBtn:hover {
+    background-color: var(--mint);
+    transition: 0.15s ease-in-out;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+#topBtn > img {
+    width: 24px;
+}
+
+.footer {
+    padding: 75px 0;
+}

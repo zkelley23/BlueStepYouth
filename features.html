@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/features.css" />
+    <title>BlueStep Youth</title>
+</head>
+
+<body id="main">
+    <nav class="navBar" id="navBar">
+        <div class="maxWidthNav maxWidth">
+            <a href="index.html" class="navLogo">
+                <img id="logo" src="Images/blueStep_youthLogo.svg" alt="BlueStep Youth logo with compass" />
+            </a>
+            <span class="menuBtn" onclick="openNav()">&#9776;</span>
+
+            <ul class="navItems">
+                <li class="active">
+                    <a href="features.html">Features</a>
+                </li>
+                <li>
+                    <a href="pricing.html">Pricing</a>
+                </li>
+                <li>
+                    <a href="company.html">Company</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="demo.html" class="navDemoBtn">Request Demo</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="featuresContent" style="margin-top: 0px;">
+        <div class="grayTile featLanding">
+            <div class="rowContent maxWidth">
+                <div>
+                    <h1>Features</h1>
+                    <p>Cupcake ipsum dolor sit amet. Caramels tootsie roll liquorice lemon drops cupcake bonbon. Pastry sugar plum marshmallow caramels.</p>
+                    <div class="featNav">
+                        <a href="#scroll1" class="btn-sm">Full Clinical Suite</a>
+                        <a href="#scroll2" class="btn-sm">Medication Management</a>
+                        <a href="#scroll3" class="btn-sm">CRM/Marketing</a>
+                        <a href="#scroll4" class="btn-sm">Academic Suite</a>
+                        <a href="#scroll5" class="btn-sm">Billing</a>
+                        <a href="#scroll6" class="btn-sm">HR/Staffing</a>
+                        <a href="#scroll7" class="btn-sm">FamilyConnect</a>
+                        <a href="#scroll8" class="btn-sm">Integration</a>
+                        <a href="#scroll9" class="btn-sm">Custom Development</a>
+                        <a href="#scroll10" class="btn-sm">Schools and Programs</a>
+                    </div>
+                </div>
+                <div class="cloudMapImg">
+                    <img src="Images/cloudMap.png" alt="Cloud map illustration" />
+                </div>
+            </div>
+        </div>
+        <!-- ********** FULL CLINICAL SUITE ********** -->
+        <span id="scroll1"></span>
+        <div class="maxWidth">
+            <div class="featCard">
+                <div class="featLeft" style="background-color: var(--blue);">
+                    <div>
+                        <h2>Full Clinical Suite</h2>
+                        <p class="featText">Pastry chocolate bar bonbon lemon drops toffee sweet roll fruitcake fruitcake. Soufflé oat cake brownie danish pie.</p>
+                        <a onclick="featMore('fullClinical',
+                                    `<p class='featText'>Croissant sesame snaps apple pie. Cheesecake lemon drops tootsie roll croissant carrot cake cotton candy topping. Chocolate cake carrot cake chocolate bar caramels bonbon carrot cake pastry lemon drops.</p>
+                                    <p class='featText'>Caramels bonbon bonbon. Pudding brownie jelly beans marzipan wafer. Lemon drops wafer ice cream. Caramels cupcake tiramisu chocolate cake.</p>`,
+                                    'Images/illustrations/1FullClinicalSuite.png',
+                                    'var(--blue)')" class="featMoreBtn">
+                            <img class="plusIcon" id="fullClinicalIcon" src="Images/xIcon.svg" />
+                            <div id="fullClinicalMore">More</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="featRight" id="fullClinical">
+                    <div id="fullClinicalToggle">Image</div>
+                    <img src="Images/illustrations/1FullClinicalSuite.png" alt="Full Clinical Suite illustration" />
+                </div>
+            </div>
+        </div>
+        <!-- ********** MEDICATION MANAGEMENT ********** -->
+        <span id="scroll2"></span>
+        <div class="maxWidth">
+            <div class="featCard">
+                <div class="featLeft" style="background-color: var(--grad2);">
+                    <div>
+                        <h2>Medication Management</h2>
+                        <p class="featText">Topping dragée pudding oat cake jelly beans croissant cake. Powder icing fruitcake sesame snaps danish pastry marzipan cupcake pastry.</p>
+                        <a onclick="featMore('medManage', 
+                                    `<p class='featText'>Chocolate cake cheesecake cake. Jelly-o lollipop icing carrot cake. Chocolate cake cotton candy liquorice jelly sweet roll.</p>
+                                    <p class='featText'>Jelly beans lemon drops pie oat cake pudding tootsie roll icing. Biscuit muffin pie ice cream caramels. Ice cream candy canes pie macaroon sesame snaps cookie jelly-o topping chocolate. Tootsie roll cupcake jelly-o cake brownie halvah pudding.</p>`,
+                                    'Images/illustrations/2MedicationManagement.png',
+                                    'var(--grad2)')" class="featMoreBtn">
+                            <img class="plusIcon" id="medManageIcon" src="Images/xIcon.svg" />
+                            <div id="medManageMore">More</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="featRight" id="medManage">
+                    <div id="medManageToggle">Image</div>
+                    <img src="Images/illustrations/2MedicationManagement.png" alt="Medication Management illustration" />
+                </div>
+            </div>
+        </div>
+        <!-- ********** CRM/MARKETING ********** -->
+        <span id="scroll3"></span>
+        <div class="maxWidth">
+            <div class="featCard">
+                <div class="featLeft" style="background-color: var(--grad3);">
+                    <div>
+                        <h2>CRM/<wbr>Marketing</h2>
+                        <p class="featText">Topping dragée pudding oat cake jelly beans croissant cake. Powder icing fruitcake sesame snaps danish pastry marzipan cupcake pastry.</p>
+                        <a onclick="featMore('crm',
+                                    `<p class='featText'>Toffee dragée dessert jelly-o. Sweet roll soufflé tootsie roll sweet. Cake topping lollipop oat cake marshmallow icing danish.</p>
+                                    <p class='featText'>Ice cream dragée sugar plum pie donut chocolate bar cheesecake cupcake marzipan. Brownie candy canes macaroon croissant dragée apple pie sesame snaps.</p>`,
+                                    'Images/illustrations/3CRM.png',
+                                    'var(--grad3)')" class="featMoreBtn">
+                            <img class="plusIcon" id="crmIcon" src="Images/xIcon.svg" />
+                            <div id="crmMore">More</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="featRight" id="crm">
+                    <div id="crmToggle">Image</div>
+                    <img src="Images/illustrations/3CRM.png" alt="Medication Management illustration" />
+                </div>
+            </div>
+        </div>
+        <!-- ********** ACADEMIC SUITE ********** -->
+        <span id="scroll4"></span>
+        <div class="maxWidth">
+            <div class="featCard">
+                <div class="featLeft" style="background-color: var(--grad4);">
+                    <div>
+                        <h2>Academic Suite</h2>
+                        <p class="featText">Apple pie jelly halvah chocolate cake. Gummi bears croissant danish donut marzipan cookie.</p>
+                        <a onclick="featMore('academic',
+                                    `<p class='featText'>Icing chocolate cake marzipan cupcake. Jelly macaroon marshmallow ice cream sugar plum carrot cake gummies. Sesame snaps halvah ice cream donut pastry ice cream sweet jelly beans jujubes. Pastry danish bear claw dragée jelly-o chocolate cake carrot cake oat cake.</p>`,
+                                    'Images/illustrations/4AcademicSuite.png',
+                                    'var(--grad4)')" class="featMoreBtn">
+                            <img class="plusIcon" id="academicIcon" src="Images/xIcon.svg" />
+                            <div id="academicMore">More</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="featRight" id="academic">
+                    <div id="academicToggle">Image</div>
+                    <img src="Images/illustrations/4AcademicSuite.png" alt="Medication Management illustration" />
+                </div>
+            </div>
+        </div>
+        <!-- ********** BILLING ********** -->
+        <span id="scroll5"></span>
+        <div class="maxWidth">
+            <div class="featCard">
+                <div class="featLeft" style="background-color: var(--grad5);">
+                    <div>
+                        <h2>Billing</h2>
+                        <p class="featText">Chocolate sugar plum sesame snaps fruitcake chocolate bar liquorice. Muffin pudding lollipop.</p>
+                        <a onclick="featMore('billing',
+                                    `<p class='featText'>Candy canes tart liquorice donut. Chocolate jelly-o sesame snaps. Soufflé marshmallow jelly-o fruitcake cupcake dessert cake. Chocolate cake topping fruitcake tiramisu chocolate bar chocolate fruitcake pie.</p>
+                                    <p class='featText'>Tiramisu jelly-o macaroon. Tart cake caramels bear claw gingerbread cheesecake sesame snaps lollipop.</p>`,
+                                    'Images/illustrations/5Billing.png',
+                                    'var(--grad5)')" class="featMoreBtn">
+                            <img class="plusIcon" id="billingIcon" src="Images/xIcon.svg" />
+                            <div id="billingMore">More</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="featRight" id="billing">
+                    <div id="billingToggle">Image</div>
+                    <img src="Images/illustrations/5Billing.png" alt="Medication Management illustration" />
+                </div>
+            </div>
+        </div>
+        <!-- ********** HR/STAFFING ********** -->
+        <span id="scroll6"></span>
+        <div class="maxWidth">
+            <div class="featCard">
+                <div class="featLeft" style="background-color: var(--grad6);">
+                    <div>
+                        <h2>HR/<wbr>Staffing</h2>
+                        <p class="featText">Dessert cookie lemon drops candy ice cream tiramisu powder muffin ice cream. Jelly-o apple pie donut cake candy ice cream ice cream.</p>
+                        <a onclick="featMore('hr',
+                                    `<p class='featText'>Halvah halvah icing. Sweet candy fruitcake sweet roll cheesecake danish dessert muffin. Cake pudding apple pie marzipan gummies sugar plum jelly lemon drops.</p>
+                                    <p class='featText'>Jelly beans tiramisu sesame snaps icing pastry. Marshmallow candy canes topping. Liquorice tart bear claw jelly halvah toffee gummi bears. Marzipan candy ice cream.</p>`,
+                                    'Images/illustrations/6HRStaffing.png',
+                                    'var(--grad6)')" class="featMoreBtn">
+                            <img class="plusIcon" id="hrIcon" src="Images/xIcon.svg" />
+                            <div id="hrMore">More</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="featRight" id="hr">
+                    <div id="hrToggle">Image</div>
+                    <img src="Images/illustrations/6HRStaffing.png" alt="Medication Management illustration" />
+                </div>
+            </div>
+        </div>
+        <!-- ********** FAMILY CONNECT ********** -->
+        <span id="scroll7"></span>
+        <div class="maxWidth">
+            <div class="featCard">
+                <div class="featLeft" style="background-color: var(--grad7);">
+                    <div>
+                        <h2>Family<wbr>Connect</h2>
+                        <p class="featText">Sugar plum apple pie caramels jelly beans liquorice chocolate dessert tart. Marzipan wafer tootsie roll lollipop.</p>
+                        <a onclick="featMore('family',
+                                    `<p class='featText'>Cake gummies bear claw jujubes dessert icing macaroon tootsie roll.</p>
+                                    <p class='featText'>Lollipop halvah biscuit caramels bear claw dessert tootsie roll bear claw marzipan. Sugar plum cheesecake gummies halvah.</p>
+                                    <p class='featText'>Liquorice toffee wafer cheesecake gummies donut wafer. Donut jujubes tootsie roll sugar plum.</p>`,
+                                    'Images/illustrations/7FamilyConnect.png',
+                                    'var(--grad7)')" class="featMoreBtn">
+                            <img class="plusIcon" id="familyIcon" src="Images/xIcon.svg" />
+                            <div id="familyMore">More</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="featRight" id="family">
+                    <div id="familyToggle">Image</div>
+                    <img src="Images/illustrations/7FamilyConnect.png" alt="Medication Management illustration" />
+                </div>
+            </div>
+        </div>
+        <!-- ********** INTEGRATION ********** -->
+        <span id="scroll8"></span>
+        <div class="maxWidth">
+            <div class="featCard">
+                <div class="featLeft" style="background-color: var(--grad8);">
+                    <div>
+                        <h2>Integration</h2>
+                        <p class="featText">Donut topping oat cake gummi bears tiramisu icing toffee. Oat cake cupcake fruitcake carrot cake.</p>
+                        <a onclick="featMore('integration',
+                                    `<p class='featText'>Chupa chups lemon drops candy canes brownie carrot cake cotton candy. Pastry cupcake oat cake pudding chocolate cake cheesecake lemon drops caramels. Apple pie biscuit cake candy oat cake topping bear claw. Danish candy canes chupa chups chupa chups lollipop.</p>`,
+                                    'Images/illustrations/8Integration.png',
+                                    'var(--grad8)')" class="featMoreBtn">
+                            <img class="plusIcon" id="integrationIcon" src="Images/xIcon.svg" />
+                            <div id="integrationMore">More</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="featRight" id="integration">
+                    <div id="integrationToggle">Image</div>
+                    <img src="Images/illustrations/8Integration.png" alt="Medication Management illustration" />
+                </div>
+            </div>
+        </div>
+        <!-- ********** CUSTOM DEVELOPMENT ********** -->
+        <span id="scroll9"></span>
+        <div class="maxWidth">
+            <div class="featCard">
+                <div class="featLeft" style="background-color: var(--grad9);">
+                    <div>
+                        <h2>Custom Development</h2>
+                        <p class="featText">Icing tiramisu cake carrot cake cheesecake gummi bears jelly-o chocolate bar. Liquorice lemon drops pastry marshmallow jujubes brownie tootsie roll cheesecake gummies.</p>
+                        <a onclick="featMore('custom',
+                                    `<p class='featText'>Tootsie roll lollipop jujubes toffee fruitcake sweet donut wafer liquorice. Muffin marshmallow gummies bear claw cheesecake sweet roll powder dessert. Bear claw soufflé chocolate cake cheesecake.</p>
+                                    <p class='featText'>Gummi bears halvah biscuit. Croissant jelly-o candy jelly brownie pastry jelly beans sugar plum. Lemon drops jujubes caramels cupcake dragée pie liquorice.</p>`,
+                                    'Images/illustrations/9CustomDevelopment.png',
+                                    'var(--grad9)')" class="featMoreBtn">
+                            <img class="plusIcon" id="customIcon" src="Images/xIcon.svg" />
+                            <div id="customMore">More</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="featRight" id="custom">
+                    <div id="customToggle">Image</div>
+                    <img src="Images/illustrations/9CustomDevelopment.png" alt="Medication Management illustration" />
+                </div>
+            </div>
+        </div>
+        <!-- ********** SCHOOLS AND PROGRAMS ********** -->
+        <span id="scroll10"></span>
+        <div class="maxWidth">
+            <div class="featCard">
+                <div class="featLeft" style="background-color: var(--mint);">
+                    <div>
+                        <h2>Schools and Programs</h2>
+                        <p class="featText">Dessert chocolate cake lollipop apple pie powder marzipan topping halvah pie. Cheesecake cake wafer bonbon. Icing sweet croissant cotton candy gummies donut cake.</p>
+                        <a onclick="featMore('school',
+                                    `<p class='featText'>Marshmallow tiramisu croissant. Croissant cake caramels toffee sesame snaps. Chocolate bar danish marzipan.</p>
+                                    <p class='featText'>Liquorice bonbon cake cake lollipop sugar plum jelly beans pie chocolate. Cheesecake pastry pudding candy canes jelly-o. Topping candy cupcake sweet roll marshmallow gummies. Gummies tiramisu chocolate cake apple pie ice cream croissant jelly.</p>`,
+                                    'Images/illustrations/10SchoolProgram.png',
+                                    'var(--mint)')" class="featMoreBtn">
+                            <img class="plusIcon" id="schoolIcon" src="Images/xIcon.svg" />
+                            <div id="schoolMore">More</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="featRight" id="school">
+                    <div id="schoolToggle">Image</div>
+                    <img src="Images/illustrations/10SchoolProgram.png" alt="Medication Management illustration" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="maxWidth footerRow">
+            <div>
+                <a href="index.html" class="navLogo">
+                    <img id="logo" src="Images/blueStep_youthLogo.svg" alt="BlueStep Youth logo with compass" />
+                </a>
+                <p>Copyright &copy; <span id="year"></span></p>
+                <p>All rights reserved</p>
+            </div>
+            <div>
+                <h5>Explore</h5>
+                <a href="pricing.html">Pricing</a>
+                <a href="company.html">Company</a>
+                <a href="demo.html">Request Demo</a>
+            </div>
+            <div>
+                <h5>Features</h5>
+                <a href="features.html#scroll1">Full Clinical Suite</a>
+                <a href="features.html#scroll2">Medication Management</a>
+                <a href="features.html#scroll3">CRM/Marketing</a>
+                <a href="features.html#scroll4">Academic Suite</a>
+                <a href="features.html#scroll5">Billing</a>
+                <a href="features.html#scroll6">HR/Staffing</a>
+                <a href="features.html#scroll7">FamilyConnect</a>
+                <a href="features.html#scroll8">Integration</a>
+                <a href="features.html#scroll9">Custom Development</a>
+                <a href="features.html#scroll10">Schools and Programs</a>
+            </div>
+            <div>
+                <h5>Contact Us</h5>
+                <p><strong>Global Headquarters</strong><br>121 W 200 S<br>Farmington, UT 84025</p>
+                <a href="contact.html"><strong>Client Care</strong><br>(801) 336-3043</a>
+            </div>
+        </div>
+        <div class="footerMobile">
+            <div>
+                <a href="index.html" class="navLogo">
+                    <img id="logo" src="Images/blueStep_youthLogo.svg" alt="BlueStep Youth logo with compass" />
+                </a>
+                <p class="copyright">Copyright &copy; <span id="yearMobile"></span><br>All rights reserved</p>
+            </div>
+            <button class="footerCollapsible">Explore</button>
+            <div class="footerContent">
+                <a href="pricing.html">Pricing</a>
+                <a href="company.html">Company</a>
+                <a href="demo.html">Request Demo</a>
+            </div>
+            <button class="footerCollapsible">Features</button>
+            <div class="footerContent">
+                <a href="features.html#scroll1">Full Clinical Suite</a>
+                <a href="features.html#scroll2">Medication Management</a>
+                <a href="features.html#scroll3">CRM/Marketing</a>
+                <a href="features.html#scroll4">Academic Suite</a>
+                <a href="features.html#scroll5">Billing</a>
+                <a href="features.html#scroll6">HR/Staffing</a>
+                <a href="features.html#scroll7">FamilyConnect</a>
+                <a href="features.html#scroll8">Integration</a>
+                <a href="features.html#scroll9">Custom Development</a>
+                <a href="features.html#scroll10">Schools and Programs</a>
+            </div>
+            <button class="footerCollapsible">Contact</button>
+            <div class="footerContent">
+                <p><strong>Global Headquarters</strong><br>121 W 200 S<br>Farmington, UT 84025</p>
+                <a href="contact.html"><strong>Client Care</strong><br>(801) 336-3043</a>
+            </div>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">
+        <img src="Images/arrowIcon.svg" alt="Arrow icon"/>
+    </button>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="features.html" class="active">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="company.html">Company</a>
+        <a href="contact.html">Contact</a>
+        <a href="demo.html">
+            <div class="navDemoBtn">Request&nbsp;Demo</div>
+        </a>
+    </div>
+    <script>
+        function featMore(id, message, img, color) {
+            var featId = document.getElementById(id);
+            var iconId = document.getElementById(id + "Icon");
+            var moreId = document.getElementById(id + "More");
+            var toggleId = document.getElementById(id + "Toggle");
+
+            var zkTest = 'Hello world!';
+
+            if (document.getElementById(id + "Toggle").innerHTML == "Image") {
+                featId.innerHTML = `<div id="${id + 'Toggle'}">Text</div><div class="featInfoCont">${message}</div>`;
+                featId.style.backgroundColor = color;
+                iconId.style.transform = "rotate(-45deg)";
+                moreId.style.display = "none";
+            } else {
+                featId.innerHTML = `<div id="${id + 'Toggle'}">Image</div><img src="${img}" />`;
+                featId.style.backgroundColor = "var(--gray)";
+                iconId.style.transform = "rotate(0deg)";
+                moreId.style.display = "inherit";
+            }
+        }
+
+
+        //Get the button
+        var mybutton = document.getElementById("topBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 675 || document.documentElement.scrollTop > 675) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+:root {
+    --green: #28AE60;
+    /*Primary color*/
+
+    --mint: #10C7B6;
+    --blue: #0F7FBD;
+    --white: #FFFFFF;
+    --white-opacity: #FFFFFF88;
+    --gray: #EFEFEF;
+    --black: #333333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ---------- HOME PAGE GRID LAYOUT ---------- */
+.pageContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "one one"
+        "two two"
+        "three three"
+        "four four"
+        "footer footer";
+    grid-gap: 12px;
+    margin-top: 75px;
+}
+
+.pageContent > div {
+    padding: 75px 0;
+}
+
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: var(--green);
+}
+
+.sayContent {
+    display: grid;
+}
+
+.sayContent > h1,
+.sayRow > div > p {
+    max-width: 500px;
+}
+
+.sayRow > div > p {
+    margin-bottom: 12px;
+}
+
+.sayRow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--gray);
+}
+
+.sayInfo > p {
+    margin: 0;
+}
+
+.sayInfo > p:first-child {
+    font-weight: 700;
+    margin: 12px 0 2px 0;
+    color: var(--mint);
+}
+
+.sayInfo > p:last-child {
+    font-size: 14px;
+}
+
+
+@media (max-width: 1129px) {
+    .sayContent > h1,
+    .sayRow > div > p {
+        max-width: 425px;
+    }
+}
+
+@media (max-width: 945px) {
+    .pageContent {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "footer";
+        margin-top: 50px;
+    }
+    
+    .sayContent {
+        justify-content: center;
+    }
+    
+    .sayContent > h1,
+    .sayRow > div > p {
+        max-width: 475px;
+    }
+    
+    .sayRow {
+        flex-direction: column;
+    }
+    
+    .sayRow > div:first-child {
+        margin-bottom: 36px;
+    }
+}
+
+@media (max-width: 523px) {
+}

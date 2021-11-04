@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/pricing.css" />
+    <title>BlueStep Youth</title>
+</head>
+
+<body id="main">
+    <nav class="navBar" id="navBar">
+        <div class="maxWidthNav maxWidth">
+            <a href="index.html" class="navLogo">
+                <img id="logo" src="Images/blueStep_youthLogo.svg" alt="BlueStep Youth logo with compass" />
+            </a>
+            <span class="menuBtn" onclick="openNav()">&#9776;</span>
+
+            <ul class="navItems">
+                <li>
+                    <a href="features.html">Features</a>
+                </li>
+                <li>
+                    <a href="pricing.html" class="active">Pricing</a>
+                </li>
+                <li>
+                    <a href="company.html">Company</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="demo.html" class="navDemoBtn">Request Demo</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="pageContent">
+        <div class="one">
+            <div class="maxWidth priceLanding">
+                <h1>Find the right plan for your facility</h1>
+                <p>Use the slider below to choose the number of residents in your facility.</p>
+                <div class="valueBox">
+                    <div class="res">
+                        <p>Residents</p>
+                    </div>
+                    <div class="value">
+                        <p id="demo"></p>
+                    </div>
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="60" value="30" class="slider" id="myRange">
+                </div>
+                <div class="scale">
+                    <p>1</p>
+                    <p>&#9168;</p>
+                    <p>10</p>
+                    <p>&#9168;</p>
+                    <p>20</p>
+                    <p>&#9168;</p>
+                    <p>30</p>
+                    <p>&#9168;</p>
+                    <p>40</p>
+                    <p>&#9168;</p>
+                    <p>50</p>
+                    <p>&#9168;</p>
+                    <p>60</p>
+                </div>
+                <div class="priceType">
+                    <a onclick="priceType('normal')" class="priceBtn normalPrice priceActive" id="normal">Normal Pricing</a>
+                    <a onclick="priceType('alt')" class="priceBtn altPrice" id="alt">Alternate Pricing</a>
+                    <span id="priceTypeText">normal</span>
+                </div>
+            </div>
+        </div>
+        <div class="two grayTile">
+            <div class="tileHead mar">
+                <img src="Images/manageMar_white.svg" alt="ManageMAR logo"/>
+            </div>
+            <div class="priceContent">
+                <h3 style="color: var(--mar);" id="marPrice"><span id="marMo">$125</span><sup>/mo</sup>
+                </h3>
+                <h3 id="marMaxPrice" style="color: var(--mar); font-size: 30px;">Contact BlueStep for price</h3>
+                <h4 id="marUF">$500 upfront fee</h4>
+                <p class="rangeRes">For <span id="rangeMar">30-39</span> residents</p>
+                <ul class="list">
+                    <li>Lollipop bear claw tootsie roll ice cream cake</li>
+                    <li>Sesame snaps pie jujubes powder jelly beans candy canes lollipop gummi bears</li>
+                    <li>Candy canes pudding pie</li>
+                </ul>
+            </div>
+        </div>
+        <div class="three grayTile">
+            <div class="tileHead pro">
+                <img src="Images/managePro_white.svg" alt="ManagePRO logo"/>
+            </div>
+            <div class="priceContent">
+                <h3 style="color: var(--pro);" id="proPrice"><span id="proMo">$450</span><sup>/mo</sup></h3>
+                <h3 id="proMaxPrice" style="color: var(--pro); font-size: 30px;">Contact BlueStep for price</h3>
+                <h4 id="proUF">$4000 upfront fee</h4>
+                <p class="rangeRes">For <span id="rangePro">30-39</span> residents</p>
+                <ul class="list">
+                    <li>Marzipan liquorice sweet pastry cookie sesame snaps</li>
+                    <li>Cake ice cream icing dessert biscuit marzipan</li>
+                    <li>Sweet roll bear claw donut chocolate chocolate candy chocolate bar oat cake pudding</li>
+                </ul>
+            </div>
+        </div>
+        <div class="four">
+            <div class="maxWidth">
+                <h1 style="text-align: center; margin: auto; margin-bottom: 36px;">Add-on Features</h1>
+                <div class="addFeatCont">
+                    <div class="addFeatCard">
+                        <div>
+                            <h5>Academics Module</h5>
+                            <!--                            <p style="color: var(--white);">This is a little spot to give a shoutout to cool people.</p>-->
+                        </div>
+                        <div>
+                            <h6 id="acaPrice"><span id="acaMo">$90</span><sup>/mo</sup></h6>
+                            <h6 id="acaMaxPrice" style="font-size: 24px;">Contact BlueStep for price</h6>
+                            <h7>$0 upfront fee</h7>
+                            <p class="rangeRes">For <span id="rangeAca">30-39</span> residents</p>
+                            <ul class="list">
+                                <li>Marzipan liquorice sweet pastry cookie sesame snaps</li>
+                                <li>Cake ice cream icing dessert biscuit marzipan</li>
+                                <li>Sweet roll bear claw donut chocolate chocolate candy chocolate bar oat cake pudding</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="addFeatCard">
+                        <div>
+                            <h5>One-Way Pharmacy Integration</h5>
+                        </div>
+                        <div>
+                            <h6 id="onePrice"><span id="oneMo">$45</span><sup>/mo</sup></h6>
+                            <h6 id="oneMaxPrice" style="font-size: 24px;">Contact BlueStep for price</h6>
+                            <h7 id="oneUF">$1500 upfront fee</h7>
+                            <p class="rangeRes">For <span id="rangeOne">30-39</span> residents</p>
+                            <ul class="list">
+                                <li>Marzipan liquorice sweet pastry cookie sesame snaps</li>
+                                <li>Cake ice cream icing dessert biscuit marzipan</li>
+                                <li>Sweet roll bear claw donut chocolate chocolate candy chocolate bar oat cake pudding</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="addFeatCard">
+                        <div>
+                            <h5>Two-Way Pharmacy Integration</h5>
+                        </div>
+                        <div>
+                            <h6 id="twoPrice"><span id="twoMo">$90</span><sup>/mo</sup></h6>
+                            <h6 id="twoMaxPrice" style="font-size: 24px;">Contact BlueStep for price</h6>
+                            <h7 id="twoUF">$3000 upfront fee</h7>
+                            <p class="rangeRes">For <span id="rangeTwo">30-39</span> residents</p>
+                            <ul class="list">
+                                <li>Marzipan liquorice sweet pastry cookie sesame snaps</li>
+                                <li>Croissant caramels caramels cookie. Ice cream tiramisu fruitcake. Donut ice cream sweet roll jelly</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="five grayTile">
+            <div class="rowContent maxWidth">
+                <div>
+                    <h1>Check it out before you pay</h1>
+                    <p>Cupcake ipsum dolor sit amet. Caramels tootsie roll liquorice lemon drops cupcake bonbon. Pastry sugar plum marshmallow caramels.</p>
+                    <a href="demo.html" class="btn">Request Demo</a>
+                </div>
+                <div class="imgContent">
+                    <img src="Images/kidsOutside.jpg" alt="Group of teenagers outside" />
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="maxWidth footerRow">
+                <div>
+                    <a href="index.html" class="navLogo">
+                        <img id="logo" src="Images/blueStep_youthLogo.svg" alt="BlueStep Youth logo with compass" />
+                    </a>
+                    <p>Copyright &copy; <span id="year"></span></p>
+                    <p>All rights reserved</p>
+                </div>
+                <div>
+                    <h5>Explore</h5>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="company.html">Company</a>
+                    <a href="demo.html">Request Demo</a>
+                </div>
+                <div>
+                    <h5>Features</h5>
+                    <a href="features.html#scroll1">Full Clinical Suite</a>
+                    <a href="features.html#scroll2">Medication Management</a>
+                    <a href="features.html#scroll3">CRM/Marketing</a>
+                    <a href="features.html#scroll4">Academic Suite</a>
+                    <a href="features.html#scroll5">Billing</a>
+                    <a href="features.html#scroll6">HR/Staffing</a>
+                    <a href="features.html#scroll7">FamilyConnect</a>
+                    <a href="features.html#scroll8">Integration</a>
+                    <a href="features.html#scroll9">Custom Development</a>
+                    <a href="features.html#scroll10">Schools and Programs</a>
+                </div>
+                <div>
+                    <h5>Contact Us</h5>
+                    <p><strong>Global Headquarters</strong><br>121 W 200 S<br>Farmington, UT 84025</p>
+                    <a href="contact.html"><strong>Client Care</strong><br>(801) 336-3043</a>
+                </div>
+            </div>
+            <div class="footerMobile">
+                <div>
+                    <a href="index.html" class="navLogo">
+                        <img id="logo" src="Images/blueStep_youthLogo.svg" alt="BlueStep Youth logo with compass" />
+                    </a>
+                    <p class="copyright">Copyright &copy; <span id="yearMobile"></span><br>All rights reserved</p>
+                </div>
+                <button class="footerCollapsible">Explore</button>
+                <div class="footerContent">
+                    <a href="pricing.html">Pricing</a>
+                    <a href="company.html">Company</a>
+                    <a href="demo.html">Request Demo</a>
+                </div>
+                <button class="footerCollapsible">Features</button>
+                <div class="footerContent">
+                    <a href="features.html#scroll1">Full Clinical Suite</a>
+                    <a href="features.html#scroll2">Medication Management</a>
+                    <a href="features.html#scroll3">CRM/Marketing</a>
+                    <a href="features.html#scroll4">Academic Suite</a>
+                    <a href="features.html#scroll5">Billing</a>
+                    <a href="features.html#scroll6">HR/Staffing</a>
+                    <a href="features.html#scroll7">FamilyConnect</a>
+                    <a href="features.html#scroll8">Integration</a>
+                    <a href="features.html#scroll9">Custom Development</a>
+                    <a href="features.html#scroll10">Schools and Programs</a>
+                </div>
+                <button class="footerCollapsible">Contact</button>
+                <div class="footerContent">
+                    <p><strong>Global Headquarters</strong><br>121 W 200 S<br>Farmington, UT 84025</p>
+                    <a href="contact.html"><strong>Client Care</strong><br>(801) 336-3043</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="pricing.html" class="active">Pricing</a>
+        <a href="company.html">Company</a>
+        <a href="contact.html">Contact</a>
+        <a href="demo.html">
+            <div class="navDemoBtn">Request&nbsp;Demo</div>
+        </a>
+    </div>
+    <script>
+        function priceType(type) {
+            if (type == 'normal') {
+                document.getElementById('normal').style.backgroundColor = 'var(--blue)';
+                document.getElementById('normal').style.color = 'var(--white)';
+                document.getElementById('alt').style.backgroundColor = 'var(--white)';
+                document.getElementById('alt').style.color = 'var(--blue)';
+                document.getElementById('priceTypeText').innerHTML = 'normal';
+            } else {
+                document.getElementById('normal').style.backgroundColor = 'var(--white)';
+                document.getElementById('normal').style.color = 'var(--blue)';
+                document.getElementById('alt').style.backgroundColor = 'var(--blue)';
+                document.getElementById('alt').style.color = 'var(--white)';
+                document.getElementById('priceTypeText').innerHTML = 'alt';
+            }
+            slider.oninput();
+        }
+
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function() {
+
+            if (slider.value == 60) {
+                output.innerHTML = this.value + "+";
+            } else {
+                output.innerHTML = this.value;
+            }
+
+            var priceType = document.getElementById("priceTypeText").innerHTML;
+
+            if (priceType == 'normal') {
+                document.getElementById("marUF").innerHTML = '$500 upfront fee';
+                document.getElementById("proUF").innerHTML = '$4000 upfront fee';
+                document.getElementById("oneUF").innerHTML = '$1500 upfront fee';
+                document.getElementById("twoUF").innerHTML = '$3000 upfront fee';
+                if (slider.value >= 1 && slider.value <= 29) {
+                    document.getElementById("marMo").innerHTML = '$100';
+                    document.getElementById("proMo").innerHTML = '$325';
+                    document.getElementById("acaMo").innerHTML = '$60';
+                    document.getElementById("oneMo").innerHTML = '$30';
+                    document.getElementById("twoMo").innerHTML = '$60';
+                    document.getElementById("rangeMar").innerHTML = '1-29';
+                    document.getElementById("rangePro").innerHTML = '1-29';
+                    document.getElementById("rangeAca").innerHTML = '1-29';
+                    document.getElementById("rangeOne").innerHTML = '1-29';
+                    document.getElementById("rangeTwo").innerHTML = '1-29';
+                    document.getElementById("marPrice").style.display = 'inherit';
+                    document.getElementById("proPrice").style.display = 'inherit';
+                    document.getElementById("marMaxPrice").style.display = 'none';
+                    document.getElementById("proMaxPrice").style.display = 'none';
+                    document.getElementById("acaPrice").style.display = 'inherit';
+                    document.getElementById("onePrice").style.display = 'inherit';
+                    document.getElementById("twoPrice").style.display = 'inherit';
+                    document.getElementById("acaMaxPrice").style.display = 'none';
+                    document.getElementById("oneMaxPrice").style.display = 'none';
+                    document.getElementById("twoMaxPrice").style.display = 'none';
+                } else if (slider.value >= 30 && slider.value <= 39) {
+                    document.getElementById("marMo").innerHTML = '$125';
+                    document.getElementById("proMo").innerHTML = '$450';
+                    document.getElementById("acaMo").innerHTML = '$90';
+                    document.getElementById("oneMo").innerHTML = '$45';
+                    document.getElementById("twoMo").innerHTML = '$90';
+                    document.getElementById("rangeMar").innerHTML = '30-39';
+                    document.getElementById("rangePro").innerHTML = '30-39';
+                    document.getElementById("rangeAca").innerHTML = '30-39';
+                    document.getElementById("rangeOne").innerHTML = '30-39';
+                    document.getElementById("rangeTwo").innerHTML = '30-39';
+                    document.getElementById("marPrice").style.display = 'inherit';
+                    document.getElementById("proPrice").style.display = 'inherit';
+                    document.getElementById("marMaxPrice").style.display = 'none';
+                    document.getElementById("proMaxPrice").style.display = 'none';
+                    document.getElementById("acaPrice").style.display = 'inherit';
+                    document.getElementById("onePrice").style.display = 'inherit';
+                    document.getElementById("twoPrice").style.display = 'inherit';
+                    document.getElementById("acaMaxPrice").style.display = 'none';
+                    document.getElementById("oneMaxPrice").style.display = 'none';
+                    document.getElementById("twoMaxPrice").style.display = 'none';
+                } else if (slider.value >= 40 && slider.value <= 49) {
+                    document.getElementById("marMo").innerHTML = '$150';
+                    document.getElementById("proMo").innerHTML = '$600';
+                    document.getElementById("acaMo").innerHTML = '$120';
+                    document.getElementById("oneMo").innerHTML = '$60';
+                    document.getElementById("twoMo").innerHTML = '$120';
+                    document.getElementById("rangeMar").innerHTML = '40-49';
+                    document.getElementById("rangePro").innerHTML = '40-59';
+                    document.getElementById("rangeAca").innerHTML = '40-59';
+                    document.getElementById("rangeOne").innerHTML = '40-59';
+                    document.getElementById("rangeTwo").innerHTML = '40-59';
+                    document.getElementById("marPrice").style.display = 'inherit';
+                    document.getElementById("proPrice").style.display = 'inherit';
+                    document.getElementById("marMaxPrice").style.display = 'none';
+                    document.getElementById("proMaxPrice").style.display = 'none';
+                    document.getElementById("acaPrice").style.display = 'inherit';
+                    document.getElementById("onePrice").style.display = 'inherit';
+                    document.getElementById("twoPrice").style.display = 'inherit';
+                    document.getElementById("acaMaxPrice").style.display = 'none';
+                    document.getElementById("oneMaxPrice").style.display = 'none';
+                    document.getElementById("twoMaxPrice").style.display = 'none';
+                } else if (slider.value >= 50 && slider.value <= 59) {
+                    document.getElementById("marMo").innerHTML = '$175';
+                    document.getElementById("proMo").innerHTML = '$600';
+                    document.getElementById("acaMo").innerHTML = '$120';
+                    document.getElementById("oneMo").innerHTML = '$60';
+                    document.getElementById("twoMo").innerHTML = '$120';
+                    document.getElementById("rangeMar").innerHTML = '50-59';
+                    document.getElementById("rangePro").innerHTML = '40-59';
+                    document.getElementById("rangeAca").innerHTML = '40-59';
+                    document.getElementById("rangeOne").innerHTML = '40-59';
+                    document.getElementById("rangeTwo").innerHTML = '40-59';
+                    document.getElementById("marPrice").style.display = 'inherit';
+                    document.getElementById("proPrice").style.display = 'inherit';
+                    document.getElementById("marMaxPrice").style.display = 'none';
+                    document.getElementById("proMaxPrice").style.display = 'none';
+                    document.getElementById("acaPrice").style.display = 'inherit';
+                    document.getElementById("onePrice").style.display = 'inherit';
+                    document.getElementById("twoPrice").style.display = 'inherit';
+                    document.getElementById("acaMaxPrice").style.display = 'none';
+                    document.getElementById("oneMaxPrice").style.display = 'none';
+                    document.getElementById("twoMaxPrice").style.display = 'none';
+                } else if (slider.value == 60) {
+                    document.getElementById("marMo").innerHTML = '$';
+                    document.getElementById("proMo").innerHTML = '$';
+                    document.getElementById("acaMo").innerHTML = '$';
+                    document.getElementById("oneMo").innerHTML = '$';
+                    document.getElementById("twoMo").innerHTML = '$';
+                    document.getElementById("rangeMar").innerHTML = '60+';
+                    document.getElementById("rangePro").innerHTML = '60+';
+                    document.getElementById("rangeAca").innerHTML = '60+';
+                    document.getElementById("rangeOne").innerHTML = '60+';
+                    document.getElementById("rangeTwo").innerHTML = '60+';
+                    document.getElementById("marPrice").style.display = 'none';
+                    document.getElementById("proPrice").style.display = 'none';
+                    document.getElementById("marMaxPrice").style.display = 'inherit';
+                    document.getElementById("proMaxPrice").style.display = 'inherit';
+                    document.getElementById("acaPrice").style.display = 'none';
+                    document.getElementById("onePrice").style.display = 'none';
+                    document.getElementById("twoPrice").style.display = 'none';
+                    document.getElementById("acaMaxPrice").style.display = 'inherit';
+                    document.getElementById("oneMaxPrice").style.display = 'inherit';
+                    document.getElementById("twoMaxPrice").style.display = 'inherit';
+                } else {
+                    document.getElementById("marMo").innerHTML = '$125';
+                    document.getElementById("proMo").innerHTML = '$450';
+                    document.getElementById("acaMo").innerHTML = '$90';
+                    document.getElementById("oneMo").innerHTML = '$45';
+                    document.getElementById("twoMo").innerHTML = '$90';
+                    document.getElementById("rangeMar").innerHTML = '30-39';
+                    document.getElementById("rangePro").innerHTML = '30-39';
+                    document.getElementById("rangeAca").innerHTML = '30-39';
+                    document.getElementById("rangeOne").innerHTML = '30-39';
+                    document.getElementById("rangeTwo").innerHTML = '30-39';
+                    document.getElementById("marPrice").style.display = 'inherit';
+                    document.getElementById("proPrice").style.display = 'inherit';
+                    document.getElementById("marMaxPrice").style.display = 'none';
+                    document.getElementById("proMaxPrice").style.display = 'none';
+                    document.getElementById("acaPrice").style.display = 'inherit';
+                    document.getElementById("onePrice").style.display = 'inherit';
+                    document.getElementById("twoPrice").style.display = 'inherit';
+                    document.getElementById("acaMaxPrice").style.display = 'none';
+                    document.getElementById("oneMaxPrice").style.display = 'none';
+                    document.getElementById("twoMaxPrice").style.display = 'none';
+                }
+            } else {
+                document.getElementById("marUF").innerHTML = '$0 upfront fee';
+                document.getElementById("proUF").innerHTML = '$0 upfront fee';
+                document.getElementById("oneUF").innerHTML = '$0 upfront fee';
+                document.getElementById("twoUF").innerHTML = '$0 upfront fee';
+                if (slider.value >= 1 && slider.value <= 29) {
+                    document.getElementById("marMo").innerHTML = '$142';
+                    document.getElementById("proMo").innerHTML = '$650';
+                    document.getElementById("acaMo").innerHTML = '$60';
+                    document.getElementById("oneMo").innerHTML = '$155';
+                    document.getElementById("twoMo").innerHTML = '$310';
+                    document.getElementById("rangeMar").innerHTML = '1-29';
+                    document.getElementById("rangePro").innerHTML = '1-29';
+                    document.getElementById("rangeAca").innerHTML = '1-29';
+                    document.getElementById("rangeOne").innerHTML = '1-29';
+                    document.getElementById("rangeTwo").innerHTML = '1-29';
+                    document.getElementById("marPrice").style.display = 'inherit';
+                    document.getElementById("proPrice").style.display = 'inherit';
+                    document.getElementById("marMaxPrice").style.display = 'none';
+                    document.getElementById("proMaxPrice").style.display = 'none';
+                    document.getElementById("acaPrice").style.display = 'inherit';
+                    document.getElementById("onePrice").style.display = 'inherit';
+                    document.getElementById("twoPrice").style.display = 'inherit';
+                    document.getElementById("acaMaxPrice").style.display = 'none';
+                    document.getElementById("oneMaxPrice").style.display = 'none';
+                    document.getElementById("twoMaxPrice").style.display = 'none';
+                } else if (slider.value >= 30 && slider.value <= 39) {
+                    document.getElementById("marMo").innerHTML = '$167';
+                    document.getElementById("proMo").innerHTML = '$775';
+                    document.getElementById("acaMo").innerHTML = '$90';
+                    document.getElementById("oneMo").innerHTML = '$177';
+                    document.getElementById("twoMo").innerHTML = '$340';
+                    document.getElementById("rangeMar").innerHTML = '30-39';
+                    document.getElementById("rangePro").innerHTML = '30-39';
+                    document.getElementById("rangeAca").innerHTML = '30-39';
+                    document.getElementById("rangeOne").innerHTML = '30-39';
+                    document.getElementById("rangeTwo").innerHTML = '30-39';
+                    document.getElementById("marPrice").style.display = 'inherit';
+                    document.getElementById("proPrice").style.display = 'inherit';
+                    document.getElementById("marMaxPrice").style.display = 'none';
+                    document.getElementById("proMaxPrice").style.display = 'none';
+                    document.getElementById("acaPrice").style.display = 'inherit';
+                    document.getElementById("onePrice").style.display = 'inherit';
+                    document.getElementById("twoPrice").style.display = 'inherit';
+                    document.getElementById("acaMaxPrice").style.display = 'none';
+                    document.getElementById("oneMaxPrice").style.display = 'none';
+                    document.getElementById("twoMaxPrice").style.display = 'none';
+                } else if (slider.value >= 40 && slider.value <= 49) {
+                    document.getElementById("marMo").innerHTML = '$192';
+                    document.getElementById("proMo").innerHTML = '$950';
+                    document.getElementById("acaMo").innerHTML = '$120';
+                    document.getElementById("oneMo").innerHTML = '$185';
+                    document.getElementById("twoMo").innerHTML = '$370';
+                    document.getElementById("rangeMar").innerHTML = '40-49';
+                    document.getElementById("rangePro").innerHTML = '40-59';
+                    document.getElementById("rangeAca").innerHTML = '40-59';
+                    document.getElementById("rangeOne").innerHTML = '40-59';
+                    document.getElementById("rangeTwo").innerHTML = '40-59';
+                    document.getElementById("marPrice").style.display = 'inherit';
+                    document.getElementById("proPrice").style.display = 'inherit';
+                    document.getElementById("marMaxPrice").style.display = 'none';
+                    document.getElementById("proMaxPrice").style.display = 'none';
+                    document.getElementById("acaPrice").style.display = 'inherit';
+                    document.getElementById("onePrice").style.display = 'inherit';
+                    document.getElementById("twoPrice").style.display = 'inherit';
+                    document.getElementById("acaMaxPrice").style.display = 'none';
+                    document.getElementById("oneMaxPrice").style.display = 'none';
+                    document.getElementById("twoMaxPrice").style.display = 'none';
+                } else if (slider.value >= 50 && slider.value <= 59) {
+                    document.getElementById("marMo").innerHTML = '$217';
+                    document.getElementById("proMo").innerHTML = '$950';
+                    document.getElementById("acaMo").innerHTML = '$120';
+                    document.getElementById("oneMo").innerHTML = '$185';
+                    document.getElementById("twoMo").innerHTML = '$370';
+                    document.getElementById("rangeMar").innerHTML = '50-59';
+                    document.getElementById("rangePro").innerHTML = '40-59';
+                    document.getElementById("rangeAca").innerHTML = '40-59';
+                    document.getElementById("rangeOne").innerHTML = '40-59';
+                    document.getElementById("rangeTwo").innerHTML = '40-59';
+                    document.getElementById("marPrice").style.display = 'inherit';
+                    document.getElementById("proPrice").style.display = 'inherit';
+                    document.getElementById("marMaxPrice").style.display = 'none';
+                    document.getElementById("proMaxPrice").style.display = 'none';
+                    document.getElementById("acaPrice").style.display = 'inherit';
+                    document.getElementById("onePrice").style.display = 'inherit';
+                    document.getElementById("twoPrice").style.display = 'inherit';
+                    document.getElementById("acaMaxPrice").style.display = 'none';
+                    document.getElementById("oneMaxPrice").style.display = 'none';
+                    document.getElementById("twoMaxPrice").style.display = 'none';
+                } else if (slider.value == 60) {
+                    document.getElementById("marMo").innerHTML = '$';
+                    document.getElementById("proMo").innerHTML = '$';
+                    document.getElementById("acaMo").innerHTML = '$';
+                    document.getElementById("oneMo").innerHTML = '$';
+                    document.getElementById("twoMo").innerHTML = '$';
+                    document.getElementById("rangeMar").innerHTML = '60+';
+                    document.getElementById("rangePro").innerHTML = '60+';
+                    document.getElementById("rangeAca").innerHTML = '60+';
+                    document.getElementById("rangeOne").innerHTML = '60+';
+                    document.getElementById("rangeTwo").innerHTML = '60+';
+                    document.getElementById("marPrice").style.display = 'none';
+                    document.getElementById("proPrice").style.display = 'none';
+                    document.getElementById("marMaxPrice").style.display = 'inherit';
+                    document.getElementById("proMaxPrice").style.display = 'inherit';
+                    document.getElementById("acaPrice").style.display = 'none';
+                    document.getElementById("onePrice").style.display = 'none';
+                    document.getElementById("twoPrice").style.display = 'none';
+                    document.getElementById("acaMaxPrice").style.display = 'inherit';
+                    document.getElementById("oneMaxPrice").style.display = 'inherit';
+                    document.getElementById("twoMaxPrice").style.display = 'inherit';
+                } else {
+                    document.getElementById("marMo").innerHTML = '$167';
+                    document.getElementById("proMo").innerHTML = '$775';
+                    document.getElementById("acaMo").innerHTML = '$90';
+                    document.getElementById("oneMo").innerHTML = '$177';
+                    document.getElementById("twoMo").innerHTML = '$340';
+                    document.getElementById("rangeMar").innerHTML = '30-39';
+                    document.getElementById("rangePro").innerHTML = '30-39';
+                    document.getElementById("rangeAca").innerHTML = '30-39';
+                    document.getElementById("rangeOne").innerHTML = '30-39';
+                    document.getElementById("rangeTwo").innerHTML = '30-39';
+                    document.getElementById("marPrice").style.display = 'inherit';
+                    document.getElementById("proPrice").style.display = 'inherit';
+                    document.getElementById("marMaxPrice").style.display = 'none';
+                    document.getElementById("proMaxPrice").style.display = 'none';
+                    document.getElementById("acaPrice").style.display = 'inherit';
+                    document.getElementById("onePrice").style.display = 'inherit';
+                    document.getElementById("twoPrice").style.display = 'inherit';
+                    document.getElementById("acaMaxPrice").style.display = 'none';
+                    document.getElementById("oneMaxPrice").style.display = 'none';
+                    document.getElementById("twoMaxPrice").style.display = 'none';
+                }
+            }
+        }
+
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

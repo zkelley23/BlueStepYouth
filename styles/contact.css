@@ -1,0 +1,56 @@
+.contactRow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 48px;
+}
+
+.contactRow > div {
+    padding-right: 48px;
+}
+
+.contactRow > div > p > a {
+    text-decoration: none;
+    color: var(--black);
+    transition: 0.3s ease-in-out;
+}
+
+.contactRow > div > p > a:hover {
+    color: var(--blue);
+    transition: 0.3s ease-in-out;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 6px 0 16px 0;
+    resize: vertical;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+}
+
+input[type=submit] {
+    color: var(--white);
+    border-radius: 6px;
+    background-color: var(--blue);
+    padding: 8px 24px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 48px;
+    border: 2px solid var(--blue);
+    transition: 0.3s ease-in-out;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+}
+
+input[type=submit]:hover {
+    color: var(--blue);
+    background-color: transparent;
+    border: 2px solid var(--blue);
+    transition: 0.3s ease-in-out;
+}
+

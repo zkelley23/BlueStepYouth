@@ -1,0 +1,357 @@
+:root {
+    --green: #28AE60;
+    /*Primary color*/
+
+    --mint: #10C7B6;
+    --blue: #0F7FBD;
+    --white: #FFFFFF;
+    --white-opacity: #FFFFFF88;
+    --gray: #EFEFEF;
+    --black: #333333;
+
+    --mar: #FFC629;
+    --pro: #0063A6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h3 > sup {
+    font-size: 42px;
+}
+
+h6 > sup {
+    font-size: 18px;
+}
+
+
+/* ---------- HOME PAGE GRID LAYOUT ---------- */
+.pageContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "one one"
+        "two three"
+        "four four"
+        "five five"
+        "footer footer";
+    grid-gap: 12px;
+    margin-top: 75px;
+}
+
+.priceContent {
+    padding: 24px 150px;
+}
+
+.grayTile {
+    background-color: var(--gray);
+}
+
+.priceLanding > h1 {
+    max-width: 475px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.priceLanding > p {
+    /*    max-width: 475px;*/
+    max-width: none;
+    margin: auto;
+    margin: 24px 0;
+    text-align: center;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+    padding: 0 !important;
+}
+
+.three {
+    grid-area: three;
+    padding: 0 !important;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: var(--green);
+}
+
+.tileHead {
+    width: 100%;
+    height: auto;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tileHead > img {
+    height: 75px;
+    padding: 12px;
+}
+
+.mar {
+    background-color: var(--mar);
+}
+
+.pro {
+    background-color: var(--pro);
+}
+
+.list {
+    font-size: 18px;
+    color: var(--black);
+    line-height: 1.4;
+}
+
+.list > li {
+    margin-bottom: 8px;
+}
+
+.rangeRes {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.priceType {
+    display: flex;
+    margin: auto;
+    width: max-content;
+}
+
+.priceType > .priceActive {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.priceBtn {
+    color: var(--blue);
+    border-radius: 6px;
+    background-color: var(--white);
+    padding: 8px 24px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 24px;
+    border: 2px solid var(--blue);
+    transition: 0.3s ease-in-out;
+}
+
+.priceBtn:hover {
+    color: var(--white);
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.normalPrice {
+    border-radius: 6px 0 0 6px;
+}
+
+.altPrice {
+    border-radius: 0 6px 6px 0;
+}
+
+#priceTypeText {
+    display: none;
+}
+
+.addFeatCont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addFeatCard {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.addFeatCard > div {
+    width: 100%;
+    padding: 24px;
+}
+
+.addFeatCard > div > p {
+    margin: 0;
+}
+
+.addFeatCard > div:first-child {
+    background-color: var(--green);
+    border-radius: 12px 12px 0 0;
+    height: auto;
+}
+
+.addFeatCard > div:last-child {
+    background-color: var(--gray);
+    border-radius: 0 0 12px 12px;
+    height: auto;
+}
+
+
+/* ---------- PRICE SLIDER ---------- */
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 8px;
+    background: var(--gray);
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--green);
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--green);
+    cursor: pointer;
+}
+
+/*
+.value {
+    font-size: 14px;
+    margin: 0;
+}
+
+.value > span {
+    font-size: 36px;
+    font-weight: 700;
+}
+*/
+
+.valueBox {
+    width: 100px;
+    margin: auto;
+    margin-bottom: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.valueBox > div > p {
+    margin: 0;
+    padding: 8px 24px;
+}
+
+.res {
+    background-color: var(--green);
+    align-self: stretch;
+    display: flex;
+    border-radius: 6px 0 0 6px;
+}
+
+.res > p {
+    color: var(--white) !important;
+    align-self: center;
+}
+
+.value {
+    background-color: var(--gray);
+    border-radius: 0 6px 6px 0;
+}
+
+.value > p {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.scale {
+    display: flex;
+    justify-content: space-between;
+}
+
+.scale > p {
+    font-size: 14px;
+}
+
+#marMaxPrice, #proMaxPrice, #acaMaxPrice, #oneMaxPrice, #twoMaxPrice {
+    display: none;
+}
+
+
+@media (max-width: 1129px) {
+    .priceContent {
+        padding: 18px 75px;
+    }
+
+    .addFeatCard {
+        width: 275px;
+    }
+}
+
+@media (max-width: 945px) {
+    .pageContent {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "footer";
+        margin-top: 50px;
+    }
+
+    .priceContent {
+        padding: 12px 24px;
+    }
+
+    .tileHead {
+        margin-top: 0px;
+    }
+    
+    .addFeatCont {
+        flex-direction: column;
+    }
+
+    .addFeatCard {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 523px) {
+    .priceBtn {
+        font-size: 14px;
+    }
+}
